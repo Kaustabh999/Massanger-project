@@ -1,4 +1,4 @@
-const socket = io("http://localhost:80");
+const socket = io("http://18.217.238.238");
 const mszz_Form = document.querySelector("#input-container");
 const mszz_input = document.getElementById("input");
 const mssz_container = document.getElementById("mssz-container");

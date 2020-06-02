@@ -1,4 +1,4 @@
-const socket = io("http://localhost:80");
+const socket = io("http://18.217.238.238");
 const mszz_Form = document.querySelector("#input-container");
 const mszz_input = document.getElementById("input");
 const mssz_container = document.getElementById("mssz-container");
@@ -49,7 +49,7 @@ search_btn.addEventListener("click", () => {
       <img src="member2.svg" class="member_icon">
       <div class="user_data">
       <p>Name: ${other_user_name}</p>
-      <p>Id: ${id}</p>       
+      <p>Id: ${id}</p>
       </div>
       </div>`;
           const link = `/${RoomNo}`;
@@ -97,7 +97,7 @@ socket.on("room-created", resBody => {
       user_link.innerHTML = `<div class="room">
           <img src="member2.svg" class="member_icon">
           <div class="room_cnt">
-          <p>${user2}</p>       
+          <p>${user2}</p>
           <span>
           ${mssz}
           </span>
@@ -145,7 +145,7 @@ function render_friends() {
           user_link.innerHTML = `<div class="room">
           <img src="member2.svg" class="member_icon">
           <div class="room_cnt">
-          <p>${rooms[Room].user2}</p>       
+          <p>${rooms[Room].user2}</p>
           <span>
           ${rooms[Room].mssz}
           </span>
@@ -167,7 +167,7 @@ function render_friends() {
           user_link.innerHTML = `<div class="room">
           <img src="member2.svg" class="member_icon">
           <div class="room_cnt">
-          <p>${rooms[Room].user2}</p>       
+          <p>${rooms[Room].user2}</p>
           <span>
           </span>
           </div>
